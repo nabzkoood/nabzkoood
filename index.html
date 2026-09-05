@@ -382,7 +382,6 @@ My Skills
 <!-- Projects -->
 <!-- ========================= -->
 <!-- Projects -->
-
 <section id="projects" class="projects">
 
 <div class="container">
@@ -391,11 +390,18 @@ My Skills
 My Projects
 </h2>
 
+<div class="filter-buttons">
+<button class="filter-btn active" data-filter="all">همه</button>
+<button class="filter-btn" data-filter="web">وب</button>
+<button class="filter-btn" data-filter="game">بازی</button>
+<button class="filter-btn" data-filter="ai">هوش مصنوعی</button>
+</div>
+
 <div class="project-grid">
 
 <!-- Shooter Game -->
 
-<div class="project-card">
+<div class="project-card" data-category="game">
 
 <img src="images/shooter.jpg" alt="Shooter Game">
 
@@ -414,7 +420,7 @@ View Project
 
 <!-- Tabssom -->
 
-<div class="project-card">
+<div class="project-card" data-category="web">
 
 <img src="images/portfolio.jpg" alt="Tabssom">
 
@@ -424,7 +430,7 @@ View Project
 A modern beauty salon website designed using HTML, CSS and JavaScript.
 </p>
 
-<a href="#" class="project-btn">
+<a href="https://nabzkoood.github.io/tabassom/" class="project-btn" target="_blank">
 View Project
 </a>
 
@@ -433,7 +439,7 @@ View Project
 
 <!-- Portfolio Website -->
 
-<div class="project-card">
+<div class="project-card" data-category="web">
 
 <img src="images/portfolio.jpg" alt="Portfolio Website">
 
@@ -452,7 +458,7 @@ Live Demo
 
 <!-- AI Projects -->
 
-<div class="project-card">
+<div class="project-card" data-category="ai">
 
 <img src="images/ai.jpg" alt="AI Projects">
 
@@ -473,6 +479,7 @@ Coming Soon
 </div>
 
 </section>
+    
 
 
 <!-- ========================= -->
