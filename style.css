@@ -1089,3 +1089,27 @@ footer{
 
 
 }
+.filter-buttons{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:32px;
+}
+.filter-btn{
+  padding:8px 20px;
+  border:1.5px solid currentColor;
+  border-radius:30px;
+  background:transparent;
+  cursor:pointer;
+  font-size:.9rem;
+  transition:all .25s ease;
+}
+.filter-btn.active,
+.filter-btn:hover{
+  background:currentColor;
+  color:var(--bg, #fff);
+}
+.project-card.hide{
+  display:none;
+}
