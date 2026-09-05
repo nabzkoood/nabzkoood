@@ -381,7 +381,7 @@ My Skills
 <!-- ========================= -->
 <!-- Projects -->
 <!-- ========================= -->
-<!-- Projects -->
+
 <section id="projects" class="projects">
 
 <div class="container">
@@ -420,296 +420,66 @@ View Project
 
 <!-- Tabssom -->
 
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>سالن زیبایی تبسم</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#FFF5F8;
-    --bg-deep:#FCE9EF;
-    --ink:#3A2530;
-    --pink:#E85D8A;
-    --pink-deep:#C43D6B;
-    --pink-light:#FBD2E1;
-    --gold:#E8B86D;
-    --line:#F6D8E4;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    font-family:'Vazirmatn', sans-serif;
-    background:var(--bg);
-    color:var(--ink);
-    line-height:1.8;
-    overflow-x:hidden;
-  }
-  a{color:inherit;text-decoration:none;}
-  img{max-width:100%;display:block;}
+<div class="project-card" data-category="web">
 
-  .blob{position:fixed;border-radius:50%;filter:blur(60px);opacity:.35;z-index:0;pointer-events:none;}
-  .blob1{width:340px;height:340px;background:var(--pink);top:-100px;right:-80px;animation:float1 14s ease-in-out infinite;}
-  .blob2{width:280px;height:280px;background:var(--gold);bottom:5%;left:-100px;animation:float2 16s ease-in-out infinite;}
-  .blob3{width:220px;height:220px;background:var(--pink-deep);top:50%;right:10%;animation:float1 12s ease-in-out infinite reverse;}
-  @keyframes float1{0%,100%{transform:translate(0,0);}50%{transform:translate(-30px,40px);}}
-  @keyframes float2{0%,100%{transform:translate(0,0);}50%{transform:translate(40px,-30px);}}
+<img src="images/portfolio.jpg" alt="Tabssom">
 
-  header, section, footer{position:relative;z-index:1;}
+<h3>وب‌سایت سالن زیبایی تبسم</h3>
 
-  header{
-    position:fixed;top:0;left:0;right:0;z-index:100;
-    display:flex;align-items:center;justify-content:space-between;
-    padding:18px 6vw;background:rgba(255,245,248,.85);
-    backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
-  }
-  .logo{font-size:1.5rem;font-weight:800;color:var(--pink-deep);}
-  nav{display:flex;gap:32px;}
-  nav a{font-size:.95rem;font-weight:500;color:var(--ink);position:relative;padding-bottom:4px;}
-  nav a::after{content:'';position:absolute;bottom:0;right:0;width:0;height:2px;background:var(--gold);transition:width .3s ease;}
-  nav a:hover::after{width:100%;}
-  .menu-toggle{display:none;background:none;border:none;font-size:1.6rem;color:var(--pink-deep);cursor:pointer;}
+<p>
+A modern beauty salon website designed using HTML, CSS and JavaScript.
+</p>
 
-  .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 6vw 60px;}
-  .hero-flourish{width:240px;height:80px;margin-bottom:20px;}
-  .hero-flourish path{fill:none;stroke:var(--gold);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.8s ease forwards .3s;}
-  @keyframes draw{to{stroke-dashoffset:0;}}
+<a href="https://nabzkoood.github.io/tabassom/" class="project-btn" target="_blank">
+View Project
+</a>
 
-  .badge{display:inline-block;padding:6px 18px;background:var(--pink-light);color:var(--pink-deep);border-radius:30px;font-size:.8rem;font-weight:600;margin-bottom:22px;opacity:0;animation:riseIn .8s ease forwards .6s;}
-  .hero h1{
-    font-size:clamp(2.6rem, 8vw, 5rem);font-weight:800;
-    background:linear-gradient(90deg, var(--pink-deep), var(--pink), var(--gold));
-    background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;
-    opacity:0;transform:translateY(18px);
-    animation:riseIn .9s ease forwards 1s, shine 5s linear infinite 2s;
-  }
-  @keyframes shine{to{background-position:200% center;}}
-  .hero p.tagline{margin-top:18px;font-size:clamp(1rem, 2.2vw, 1.25rem);color:#7A5C68;max-width:520px;opacity:0;transform:translateY(18px);animation:riseIn .9s ease forwards 1.3s;}
-  @keyframes riseIn{to{opacity:1;transform:translateY(0);}}
+</div>
 
-  .hero-cta{margin-top:40px;display:inline-flex;gap:16px;opacity:0;animation:riseIn .9s ease forwards 1.55s;}
-  .btn{padding:14px 34px;border-radius:40px;font-size:.95rem;font-weight:600;cursor:pointer;border:1.5px solid var(--pink-deep);transition:all .3s ease;}
-  .btn.primary{background:var(--pink-deep);color:#fff;box-shadow:0 8px 24px rgba(196,61,107,.35);}
-  .btn.primary:hover{background:var(--pink);transform:translateY(-3px);box-shadow:0 12px 30px rgba(196,61,107,.45);}
-  .btn.ghost{background:transparent;color:var(--pink-deep);}
-  .btn.ghost:hover{background:var(--pink-deep);color:#fff;transform:translateY(-3px);}
 
-  .scroll-hint{margin-top:70px;width:22px;height:36px;border:2px solid var(--pink-deep);border-radius:20px;position:relative;opacity:.6;}
-  .scroll-hint::before{content:'';position:absolute;top:6px;left:50%;width:4px;height:8px;background:var(--pink-deep);border-radius:2px;transform:translateX(-50%);animation:scrollDot 1.6s ease infinite;}
-  @keyframes scrollDot{0%{opacity:1;top:6px;}100%{opacity:0;top:18px;}}
+<!-- Portfolio Website -->
 
-  section{padding:110px 6vw;}
-  .section-head{max-width:640px;margin-bottom:60px;}
-  .section-head .kicker{font-size:.85rem;color:var(--pink-deep);font-weight:700;margin-bottom:10px;}
-  .section-head h2{font-size:clamp(1.9rem, 4vw, 2.6rem);font-weight:700;color:var(--ink);}
-  .section-head p{margin-top:14px;color:#7A5C68;max-width:52ch;}
+<div class="project-card" data-category="web">
 
-  .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease, transform .7s ease;}
-  .reveal.show{opacity:1;transform:translateY(0);}
+<img src="images/portfolio.jpg" alt="Portfolio Website">
 
-  .services{background:var(--bg-deep);}
-  .service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px;}
-  .service-card{background:#fff;border-radius:20px;padding:32px 26px;box-shadow:0 10px 30px rgba(232,93,138,.08);transition:transform .35s ease, box-shadow .35s ease;}
-  .service-card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(232,93,138,.18);}
-  .service-icon{width:52px;height:52px;color:var(--pink-deep);margin-bottom:18px;}
-  .service-card h3{font-size:1.15rem;font-weight:700;margin-bottom:8px;}
-  .service-card p{color:#7A5C68;font-size:.92rem;}
+<h3>Portfolio Website</h3>
 
-  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-  .tile{aspect-ratio:3/4;border-radius:18px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:20px;color:#fff;transition:transform .4s ease;}
-  .tile:hover{transform:scale(1.03) translateY(-4px);}
-  .tile span{font-weight:600;font-size:1rem;position:relative;z-index:2;}
-  .tile::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.55) 100%);}
-  .tile .tex{position:absolute;inset:0;transition:transform .5s ease;}
-  .tile:hover .tex{transform:scale(1.1);}
-  .tile:nth-child(1) .tex{background:radial-gradient(circle at 30% 30%, #F4A9C4, #C43D6B 70%);}
-  .tile:nth-child(2) .tex{background:radial-gradient(circle at 70% 20%, #F3D9A8, #E8B86D 70%);}
-  .tile:nth-child(3) .tex{background:radial-gradient(circle at 40% 60%, #E85D8A, #8C2C56 70%);}
-  .tile:nth-child(4) .tex{background:radial-gradient(circle at 60% 40%, #F7C6DA, #E85D8A 70%);}
-  .tile:nth-child(5) .tex{background:radial-gradient(circle at 50% 50%, #E8B86D, #C43D6B 70%);}
-  .tile:nth-child(6) .tex{background:radial-gradient(circle at 30% 70%, #F0A0BE, #E8B86D 70%);}
+<p>
+Personal website created using HTML, CSS and JavaScript.
+</p>
 
-  .booking{background:linear-gradient(135deg, var(--pink-deep), #8C2C56);color:#fff;border-radius:28px;margin:0 6vw;padding:80px 6vw;width:auto;}
-  .booking .section-head h2{color:#fff;}
-  .booking .section-head p{color:#F6D8E4;}
-  form{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:680px;}
-  form .full{grid-column:1/-1;}
-  label{display:block;font-size:.85rem;margin-bottom:8px;color:#F6D8E4;}
-  input, select{width:100%;padding:13px 14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);border-radius:10px;color:#fff;font-family:inherit;font-size:.95rem;}
-  input::placeholder{color:#F0C7D6;}
-  input:focus, select:focus{outline:2px solid var(--gold);outline-offset:2px;background:rgba(255,255,255,.18);}
-  select option{color:#3A2530;}
-  .booking .btn.primary{grid-column:1/-1;background:var(--gold);border-color:var(--gold);color:#3A2530;margin-top:6px;}
-  .booking .btn.primary:hover{background:#F0C87E;}
-  .form-note{grid-column:1/-1;font-size:.85rem;color:#F6D8E4;margin-top:-6px;}
+<a href="#" class="project-btn">
+Live Demo
+</a>
 
-  footer{padding:48px 6vw;text-align:center;color:#B98A9C;font-size:.85rem;}
+</div>
 
-  @media (max-width:820px){
-    nav{position:fixed;top:66px;left:0;right:0;background:var(--bg);flex-direction:column;padding:20px 6vw;gap:18px;border-bottom:1px solid var(--line);transform:translateY(-140%);transition:transform .35s ease;}
-    nav.open{transform:translateY(0);}
-    .menu-toggle{display:block;}
-    form{grid-template-columns:1fr;}
-    .gallery{grid-template-columns:repeat(2,1fr);}
-    .booking{margin:0 4vw;padding:60px 5vw;}
-  }
-  @media (max-width:520px){
-    .gallery{grid-template-columns:1fr 1fr;}
-    section{padding:80px 5vw;}
-  }
-  @media (prefers-reduced-motion: reduce){
-    *{animation:none !important;transition:none !important;}
-  }
-</style>
-</head>
-<body>
 
-<div class="blob blob1"></div>
-<div class="blob blob2"></div>
-<div class="blob blob3"></div>
+<!-- AI Projects -->
 
-<header>
-  <div class="logo">تبسم</div>
-  <nav id="nav">
-    <a href="#services">خدمات</a>
-    <a href="#gallery">نمونه‌کار</a>
-    <a href="#booking">رزرو نوبت</a>
-  </nav>
-  <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو">☰</button>
-</header>
+<div class="project-card" data-category="ai">
 
-<section class="hero">
-  <svg class="hero-flourish" viewBox="0 0 220 70" xmlns="http://www.w3.org/2000/svg">
-    <path d="M5 40 C 40 5, 70 65, 110 35 C 150 5, 180 65, 215 30"/>
-  </svg>
-  <div class="badge">✨ سالن زیبایی تخصصی</div>
-  <h1>سالن زیبایی تبسم</h1>
-  <p class="tagline">جایی برای آرامش، مراقبت و یک لبخند تازه. با دستانی حرفه‌ای، زیبایی طبیعی شما را برجسته می‌کنیم.</p>
-  <div class="hero-cta">
-    <a href="#booking" class="btn primary">رزرو نوبت</a>
-    <a href="#gallery" class="btn ghost">نمونه‌کارها</a>
-  </div>
-  <div class="scroll-hint"></div>
+<img src="images/ai.jpg" alt="AI Projects">
+
+<h3>AI Projects</h3>
+
+<p>
+Artificial Intelligence projects with Python.
+</p>
+
+<a href="#" class="project-btn">
+Coming Soon
+</a>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="services reveal" id="services">
-  <div class="section-head">
-    <div class="kicker">خدمات ما</div>
-    <h2>هر خدمت، با دقت و سلیقه</h2>
-    <p>از مراقبت ناخن تا تغییر رنگ مو، هر خدمت را متناسب با سلیقه و نیاز شما انجام می‌دهیم.</p>
-  </div>
-  <div class="service-grid">
-    <div class="service-card">
-      <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
-        <path d="M14 44c0-8 4-13 4-20 0-4-2-6-2-10a4 4 0 018 0v9M24 23v-11a4 4 0 018 0v11M32 23v-7a4 4 0 018 0v14c0 10-4 15-4 21"/>
-      </svg>
-      <h3>خدمات ناخن</h3>
-      <p>کاشت، طراحی و مانیکور حرفه‌ای با ابزار استریل و رنگ‌های ماندگار.</p>
-    </div>
-    <div class="service-card">
-      <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
-        <path d="M8 20c4-10 12-14 16-14s12 4 16 14c2 6-1 9-4 9-2 0-3-2-3-2s-3 12-13 12S7 27 7 27s-1 2-3 2c-3 0-6-3-4-9z"/>
-      </svg>
-      <h3>رنگ مو</h3>
-      <p>رنگ، هایلایت و آمبره با محصولات مراقبتی که به سلامت مو اهمیت می‌دهند.</p>
-    </div>
-    <div class="service-card">
-      <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
-        <path d="M6 14l18 8 18-8M12 34l6-2M12 40l10-3M24 22v20"/>
-      </svg>
-      <h3>کوتاهی و مدل مو</h3>
-      <p>طراحی مدل متناسب با فرم صورت، از کلاسیک تا مدرن.</p>
-    </div>
-    <div class="service-card">
-      <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
-        <circle cx="24" cy="24" r="10"/>
-        <path d="M24 4v6M24 38v6M4 24h6M38 24h6M9 9l4 4M35 35l4 4M39 9l-4 4M13 35l-4 4"/>
-      </svg>
-      <h3>پاکسازی پوست</h3>
-      <p>پاکسازی عمیق و مراقبت پوستی برای شادابی و طراوت صورت.</p>
-    </div>
-  </div>
-</section>
-
-<section id="gallery" class="reveal">
-  <div class="section-head">
-    <div class="kicker">نمونه‌کار</div>
-    <h2>چند نمونه از کارهای اخیر</h2>
-    <p>گوشه‌ای از کارهایی که با عشق برای مشتریان‌مان انجام داده‌ایم.</p>
-  </div>
-  <div class="gallery">
-    <div class="tile"><div class="tex"></div><span>رنگ و هایلایت</span></div>
-    <div class="tile"><div class="tex"></div><span>طراحی ناخن</span></div>
-    <div class="tile"><div class="tex"></div><span>کوتاهی مدرن</span></div>
-    <div class="tile"><div class="tex"></div><span>آمبره طلایی</span></div>
-    <div class="tile"><div class="tex"></div><span>مانیکور فرانسوی</span></div>
-    <div class="tile"><div class="tex"></div><span>پاکسازی و اسپا</span></div>
-  </div>
-</section>
-
-<section id="booking" class="reveal">
-  <div class="booking">
-    <div class="section-head">
-      <div class="kicker">رزرو نوبت</div>
-      <h2>وقت خودتون رو رزرو کنید</h2>
-      <p>فرم زیر رو پر کنید تا هماهنگی نوبتتون انجام بشه.</p>
-    </div>
-    <form onsubmit="event.preventDefault(); document.getElementById('formMsg').style.display='block';">
-      <div>
-        <label for="name">نام و نام خانوادگی</label>
-        <input type="text" id="name" placeholder="مثلاً سارا احمدی" required>
-      </div>
-      <div>
-        <label for="phone">شماره تماس</label>
-        <input type="tel" id="phone" placeholder="09xxxxxxxxx" required>
-      </div>
-      <div>
-        <label for="service">نوع خدمات</label>
-        <select id="service" required>
-          <option value="">انتخاب کنید</option>
-          <option>خدمات ناخن</option>
-          <option>رنگ مو</option>
-          <option>کوتاهی و مدل مو</option>
-          <option>پاکسازی پوست</option>
-        </select>
-      </div>
-      <div>
-        <label for="date">تاریخ پیشنهادی</label>
-        <input type="date" id="date" required>
-      </div>
-      <div class="full">
-        <button type="submit" class="btn primary" style="width:100%;">ثبت درخواست نوبت</button>
-      </div>
-      <p class="form-note" id="formMsg" style="display:none;">درخواست شما ثبت شد. به‌زودی برای هماهنگی تماس می‌گیریم.</p>
-    </form>
-  </div>
-</section>
-
-<footer>
-  © سالن زیبایی تبسم — همه حقوق محفوظ است
-</footer>
-
-<script>
-  const toggle = document.getElementById('menuToggle');
-  const nav = document.getElementById('nav');
-  toggle.addEventListener('click', () => nav.classList.toggle('open'));
-  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('show');
-      }
-    });
-  }, {threshold:.15});
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
-
-</body>
-</html>
 
 <!-- ========================= -->
 <!-- Certificates -->
@@ -780,7 +550,52 @@ My Journey
 <div class="timeline-box">
 
 <div class="timeline-item">
-  <!-- ========================= -->
+
+<h3>2026</h3>
+
+<p>
+Started Web Development
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Flutter</h3>
+
+<p>
+Building Mobile Applications
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Godot</h3>
+
+<p>
+Creating Action Games
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Artificial Intelligence</h3>
+
+<p>
+Developing AI Projects
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
 <!-- Contact -->
 <!-- ========================= -->
 
@@ -901,47 +716,3 @@ My Journey
 </body>
 
 </html>
-
-<h3>2026</h3>
-
-<p>
-Started Web Development
-</p>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>Flutter</h3>
-
-<p>
-Building Mobile Applications
-</p>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>Godot</h3>
-
-<p>
-Creating Action Games
-</p>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>Artificial Intelligence</h3>
-
-<p>
-Developing AI Projects
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
