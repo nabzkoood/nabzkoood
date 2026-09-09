@@ -14,6 +14,31 @@
 
     <link rel="stylesheet" href="style.css">
 <meta name="google-site-verification" content="QCqeIYcpmgvfhM5EDMD83nPNse-zkeCRTWgxLFARJlI" />
+<style>
+.sub-projects{
+  list-style:none;
+  margin:14px 0 20px;
+  padding:0;
+  text-align:right;
+}
+.sub-projects li{
+  margin-bottom:8px;
+}
+.sub-projects a{
+  display:inline-block;
+  padding:6px 14px;
+  border:1.5px solid currentColor;
+  border-radius:20px;
+  font-size:.85rem;
+  text-decoration:none;
+  color:inherit;
+  transition:all .25s ease;
+}
+.sub-projects a:hover{
+  background:currentColor;
+  color:#fff;
+}
+</style>
 </head>
 
 <body>
@@ -418,36 +443,21 @@ View Project
 </div>
 
 
-<!-- Tabssom -->
-
-<div class="project-card" data-category="web">
-
-<img src="images/portfolio.jpg" alt="Tabssom">
-
-<h3>وب‌سایت سالن زیبایی تبسم</h3>
-
-<p>
-A modern beauty salon website designed using HTML, CSS and JavaScript.
-</p>
-
-<a href="https://nabzkoood.github.io/tabassom/" class="project-btn" target="_blank">
-View Project
-</a>
-
-</div>
-
-
-<!-- Portfolio Website -->
+<!-- Portfolio Website (contains web sub-projects like Tabssom) -->
 
 <div class="project-card" data-category="web">
 
 <img src="images/portfolio.jpg" alt="Portfolio Website">
 
-<h3>Portfolio Website</h3>
+<h3>نمونه‌کارهای وب</h3>
 
 <p>
-Personal website created using HTML, CSS and JavaScript.
+سایت‌هایی که با HTML، CSS و جاوااسکریپت طراحی کرده‌ام.
 </p>
+
+<ul class="sub-projects">
+<li><a href="https://nabzkoood.github.io/tabassom/" target="_blank">سالن زیبایی تبسم</a></li>
+</ul>
 
 <a href="#" class="project-btn">
 Live Demo
