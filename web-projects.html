@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نمونه‌کارهای وب | Nabz Code</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .web-portfolio {
+            min-height: 100vh;
+            padding: 130px 0 80px;
+        }
+
+        .web-intro {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .web-intro p {
+            color: var(--gray);
+            margin-top: 12px;
+        }
+
+        .web-project-card {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 30px;
+            background: var(--card);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            transition: 0.3s;
+        }
+
+        .web-project-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary);
+        }
+
+        .web-project-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .web-project-card h3 {
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .web-project-card p {
+            color: var(--gray);
+            margin-bottom: 22px;
+        }
+
+        .web-project-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .web-project-card {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="web-portfolio">
+        <div class="container">
+
+            <a class="back-link" href="index.html#projects">
+                ← بازگشت به نبض کد
+            </a>
+
+            <div class="web-intro">
+                <h1 class="section-title">نمونه‌کارهای وب</h1>
+                <p>
+                    وب‌سایت‌هایی که طراحی و توسعه داده‌ام.
+                </p>
+            </div>
+
+            <div class="web-project-card">
+                <div class="web-project-icon">💄</div>
+
+                <h3>وب‌سایت سالن زیبایی تبسم</h3>
+
+                <p>
+                    یک پروژه طراحی وب برای سالن زیبایی،
+                    با تمرکز بر ظاهر زیبا و تجربه کاربری.
+                </p>
+
+                <div class="web-project-actions">
+                    <a
+                        class="project-btn"
+                        href="https://nabzkoood.github.io/tabassom/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        مشاهده سایت ↗
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
